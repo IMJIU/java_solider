@@ -1,4 +1,4 @@
-package chapter05_thread.security;
+package chapter05_thread.t03_security;
 
 public class NoVisiabilityTest {
 	

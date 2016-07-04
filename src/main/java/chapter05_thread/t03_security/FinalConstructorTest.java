@@ -1,4 +1,4 @@
-package chapter05_thread.security;
+package chapter05_thread.t03_security;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,13 +36,13 @@ public class FinalConstructorTest {
 		}
 		
 		public void display() {
-			System.out.println(INT);
-			System.out.println(FINAL_INT);
-			System.out.println(FINAL_INTEGER);
-			System.out.println(STR1);
-			System.out.println(FINAL_STR1);
-			System.out.println(FINAL_STR2);
-			System.out.println(FINAL_LIST);
+			System.out.println("INT-"+INT);
+			System.out.println("FINAL_INT-"+FINAL_INT);
+			System.out.println("FINAL_INTEGER-"+FINAL_INTEGER);
+			System.out.println("STR1-"+STR1);
+			System.out.println("FINAL_STR1-"+FINAL_STR1);
+			System.out.println("FINAL_STR2-"+FINAL_STR2);
+			System.out.println("FINAL_LIST-"+FINAL_LIST);
 		}
 	}
 	
