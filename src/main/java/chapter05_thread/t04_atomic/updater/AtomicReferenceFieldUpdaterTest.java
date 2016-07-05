@@ -1,4 +1,4 @@
-package chapter05_thread.atomic.updater;
+package chapter05_thread.t04_atomic.updater;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 

@@ -1,4 +1,4 @@
-package chapter05_thread.atomic.array;
+package chapter05_thread.t04_atomic.array;
 
 import java.util.concurrent.atomic.AtomicLongArray;
 

@@ -31,7 +31,8 @@ public class T04_ThreadLocalTest {
 		final A a = new A();
 		final B b = new B();
 		for (int i = 0; i < 15; i++) {
-			final String resouce1 = "线程-" + i, resouce2 = " value = (" + i + ")";
+			final String resouce1 = "线程-" + i, 
+					     resouce2 = " value = (" + i + ")";
 			new Thread() {
 				public void run() {
 					try {

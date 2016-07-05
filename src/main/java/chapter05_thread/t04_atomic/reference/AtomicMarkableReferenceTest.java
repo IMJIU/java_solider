@@ -1,4 +1,4 @@
-package chapter05_thread.atomic.reference;
+package chapter05_thread.t04_atomic.reference;
 
 import java.util.concurrent.atomic.AtomicMarkableReference;
 

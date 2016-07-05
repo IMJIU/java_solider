@@ -1,4 +1,4 @@
-package chapter05_thread.atomic;
+package chapter05_thread.t04_atomic;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicInteger;

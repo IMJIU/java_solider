@@ -1,4 +1,4 @@
-package chapter05_thread.atomic.extend;
+package chapter05_thread.t04_atomic.extend;
 
 import java.lang.reflect.Field;
 
