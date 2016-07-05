@@ -47,6 +47,8 @@ public class FinalConstructorTest {
 	}
 	
 	public static void main(String []args) {
-		new B();
+		B b = new B();
+		System.out.println("=============");
+		b.display();
 	}
 }
