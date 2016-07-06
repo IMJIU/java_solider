@@ -1,4 +1,4 @@
-package chapter05_thread.tools;
+package chapter05_thread.t06_tools;
 
 import java.util.concurrent.Phaser;
 

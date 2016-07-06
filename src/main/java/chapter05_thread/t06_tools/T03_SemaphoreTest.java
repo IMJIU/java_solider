@@ -1,4 +1,4 @@
-package chapter05_thread.tools;
+package chapter05_thread.t06_tools;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -6,17 +6,17 @@ import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
-public class SemaphoreTest {
-	
+public class T03_SemaphoreTest {
+
 	private final static Semaphore MAX_SEMA_PHORE = new Semaphore(5);
-	
+
 	private final static SimpleDateFormat DEFAULT_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	public static String getDateTime() {
-        Date datetime = Calendar.getInstance().getTime();
-        return DEFAULT_DATE_FORMAT.format(datetime);
-    }
-	
+		Date datetime = Calendar.getInstance().getTime();
+		return DEFAULT_DATE_FORMAT.format(datetime);
+	}
+
 	public static void main(String[] args) {
 		for (int i = 0; i < 20; i++) {
 			final int num = i;

@@ -1,20 +1,18 @@
-package chapter05_thread.tools;
+package chapter05_thread.t06_tools;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
-public class CyclicBarrierTest {
+public class T02_CyclicBarrierTest {
 	private static final int THREAD_COUNT = 3;
 
-	private final static CyclicBarrier CYCLIC_BARRIER = new CyclicBarrier(
-			THREAD_COUNT, new Runnable() {
-				public void run() {
-					System.out.println("======>我是导游，本次点名结束，准备走下一个环节!");
-				}
-			});
+	private final static CyclicBarrier CYCLIC_BARRIER = new CyclicBarrier(THREAD_COUNT, new Runnable() {
+		public void run() {
+			System.out.println("======>我是导游，本次点名结束，准备走下一个环节!");
+		}
+	});
 
-	public static void main(String[] args) throws InterruptedException,
-			BrokenBarrierException {
+	public static void main(String[] args) throws InterruptedException, BrokenBarrierException {
 		for (int i = 0; i < THREAD_COUNT; i++) {
 			new Thread(String.valueOf(i)) {
 				public void run() {

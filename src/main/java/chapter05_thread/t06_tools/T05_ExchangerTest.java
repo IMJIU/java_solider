@@ -1,12 +1,12 @@
-package chapter05_thread.tools;
+package chapter05_thread.t06_tools;
 
 import java.util.concurrent.Exchanger;
 
-public class ExchangerTest {
+public class T05_ExchangerTest {
 
-	public static void main(String []args) {
-		final Exchanger <Integer>exchanger = new Exchanger<Integer>();
-		for(int i = 0 ; i < 10 ; i++) {
+	public static void main(String[] args) {
+		final Exchanger<Integer> exchanger = new Exchanger<Integer>();
+		for (int i = 0; i < 10; i++) {
 			final Integer num = i;
 			new Thread() {
 				public void run() {
