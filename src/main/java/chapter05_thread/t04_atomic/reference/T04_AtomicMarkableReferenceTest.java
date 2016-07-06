@@ -2,7 +2,7 @@ package chapter05_thread.t04_atomic.reference;
 
 import java.util.concurrent.atomic.AtomicMarkableReference;
 
-public class AtomicMarkableReferenceTest {
+public class T04_AtomicMarkableReferenceTest {
 
 	/**
 	 * 使用方式基本和AtomicStampedReference一致

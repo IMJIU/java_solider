@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * @author zhongyin.xy
  *
  */
-public class AtomicReferenceTest {
+public class T01_AtomicReferenceTest {
 
 	/**
 	 * 相关方法列表
