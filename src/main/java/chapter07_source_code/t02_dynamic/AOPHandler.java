@@ -23,21 +23,19 @@ public class AOPHandler implements InvocationHandler {
 		}
 	}
 
-	public Object invoke(Object proxyed, Method method, Object[] args)
-			throws IllegalArgumentException, IllegalAccessException,
-			InvocationTargetException {
-		//System.out.println(method.getDeclaringClass());
-		System.out.println("\n\n====>调用方法名：" + method.getName());
+	public Object invoke(Object proxyed, Method method, Object[] args) throws IllegalArgumentException, IllegalAccessException, InvocationTargetException {
+		// System.out.println(method.getDeclaringClass());
+		System.out.println("====>调用方法名：" + method.getName());
 		Class<?>[] variables = method.getParameterTypes();
-		System.out.println("\n\t参数类型列表：\n");
+		System.out.println("参数类型列表：");
 		for (Class<?> typevariables : variables) {
-			System.out.println("\t\t\t" + typevariables.getName());
+			System.out.println("\t" + typevariables.getName());
 		}
-		println("\n\n\t传入参数值为：\n");
-		for(Object arg : args) {
-			System.out.println("\t\t\t" + arg);
+		println("传入参数值为：");
+		for (Object arg : args) {
+			System.out.println("\t" + arg);
 		}
-		
+		System.out.println("invoke:");
 		Object result = method.invoke(target, args);
 		println("返回的参数为：", result);
 		println("返回值类型为：", method.getReturnType());

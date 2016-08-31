@@ -22,7 +22,7 @@ class Child extends Parent {
 	}
 	
 	{
-		System.out.println("child block call....");
+		System.out.println("child normal block call....");
 	}
 	
 	public Child() {

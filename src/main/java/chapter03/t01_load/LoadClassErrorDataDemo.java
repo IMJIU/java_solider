@@ -12,6 +12,7 @@ public class LoadClassErrorDataDemo {
 	private static List<String> LIST;
 	
    	static {
+   		System.out.println("why1");
    		LIST = new ArrayList<String>();
    		LIST.add("1");
    	}
@@ -20,6 +21,7 @@ public class LoadClassErrorDataDemo {
    	  	if(LIST == null) {
    	  		LIST = new ArrayList<String>();	
    	  	}
+   	  	System.out.println("why2");
    	  	LIST.add("2");
    	  	LIST.add("3");
    	}

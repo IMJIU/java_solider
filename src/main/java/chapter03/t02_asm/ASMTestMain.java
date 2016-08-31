@@ -9,12 +9,10 @@ import org.objectweb.asm.ClassWriter;
 
 public class ASMTestMain {
 
-	private final static DynamicClassLoader TEST_CLASS_LOADER = new DynamicClassLoader(
-			(URLClassLoader) ASMTestMain.class.getClassLoader());
+	private final static DynamicClassLoader TEST_CLASS_LOADER = new DynamicClassLoader((URLClassLoader) ASMTestMain.class.getClassLoader());
 
-	public static void main(String[] args)
-			throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException,
-			IllegalArgumentException, SecurityException, InvocationTargetException, NoSuchMethodException {
+	public static void main(String[] args) throws ClassNotFoundException, IOException, InstantiationException, IllegalAccessException, IllegalArgumentException,
+			SecurityException, InvocationTargetException, NoSuchMethodException {
 		// 在字节码增强前记录一个Class
 		Class<?> beforeASMClass = TEST_CLASS_LOADER.loadClass("chapter03.t02_asm.ForASMTestClass");
 
@@ -28,6 +26,7 @@ public class ASMTestMain {
 
 		// 分表调用它们的代码
 		beforeASMClass.getMethod("display1").invoke(beforeObject);
+		System.out.println();
 		afterASMClass.getMethod("display1").invoke(afterObject);
 	}
 
