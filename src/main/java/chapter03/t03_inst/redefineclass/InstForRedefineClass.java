@@ -12,8 +12,7 @@ public class InstForRedefineClass {
 		inst = instP;
 	}
 
-	public static void redefineClass(Class<?> theClass, byte[] theClassFile)
-			throws ClassNotFoundException, UnmodifiableClassException {
+	public static void redefineClass(Class<?> theClass, byte[] theClassFile) throws ClassNotFoundException, UnmodifiableClassException {
 		inst.redefineClasses(new ClassDefinition(theClass, theClassFile));
 	}
 }
