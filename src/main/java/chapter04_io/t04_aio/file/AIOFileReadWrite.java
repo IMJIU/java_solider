@@ -14,8 +14,13 @@ public class AIOFileReadWrite {
 		// AsynchronousFileChannel.open(file, options, executor, attrs)
 		FileChannel writeChannel = new FileOutputStream("d:/GTGraphics_2.themepack").getChannel();
 		ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
-		FileReadCompletion completion = new FileReadCompletion(byteBuffer, readChannel);
-		readChannel.read(byteBuffer, 0l, writeChannel, completion);
+		
+//		FileReadCompletion completion = new FileReadCompletion(byteBuffer, readChannel);
+//		readChannel.read(byteBuffer, 0l, writeChannel, completion);
+		
+		//从writeChannel到readChannel
+		readChannel.read(byteBuffer, 0l, writeChannel, new FileReadCompletion(byteBuffer, readChannel));
+		
 		System.in.read();// 让程序暂停在这里，否则会直接退出
 	}
 }
