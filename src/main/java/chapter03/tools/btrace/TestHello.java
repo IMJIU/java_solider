@@ -3,6 +3,8 @@ package chapter03.tools.btrace;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.sun.btrace.BTraceUtils;
+
 /**
  * 这是一段被BTrace跟踪的代码哦！
  * 而跟踪的代码，大家请到script目录下找到文件BTraceTest.java
